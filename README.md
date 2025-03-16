@@ -1,9 +1,6 @@
-# Memory
+# Pizza Memory
 
-> _Memory Game with emojis_
-
-- The final result can be live-tested at [memory.caian.dev](https://memory.caian.dev)
-- [Post about](https://caian.dev/posts/create-memory-game-with-nextjs/) this project
+> _Memory game in which you match images pizzas with their Italian name_
 
 ## Techs
 
