@@ -19,10 +19,9 @@ function Card({
 }) {
   const cardTransitionClasses = "transition duration-500";
   const cardContentTransitionClasses = "transition duration-300";
-  const contentClasses =
-    "bg-purple-400 w-full h-full absolute top-0 left-0 rounded";
-  const flipUpClasses = "scale-x-100 opacity-100";
-  const flipDownClasses = "-scale-x-100 opacity-0";
+  const contentClasses = "bg-white w-full h-full backdrop-blur-md shadow-lg rounded-x1 border border-gray-300 absolute top-0 left-0 rounded";
+  const flipUpClasses = "rotate-y-0 opacity-100";
+  const flipDownClasses = "rotate-y-180 opacity-0";
 
   return (
     <button
@@ -80,7 +79,7 @@ export function Board() {
 
   return (
     <div
-      className="flex w-full items-center justify-center gap-6 flex-col text-purple-950"
+      className="flex w-full items-center justify-center gap-6 flex-col text-purple-50 bg-gradient-to-br from-gray-900 to-gray-700"
       aria-label="Memory Board"
     >
       {/* Game Info Section - Always Stays in the Same Position */}
@@ -93,7 +92,7 @@ export function Board() {
           <p className="text-red-600">Moves: {state.moves}</p>
         </div>
         <button
-          className="self-center px-4 mt-2 font-bold border rounded border-gray-600 text-slate-800"
+          className="self-center px-4 mt-2 font-bold border rounded border-white text-white text-slate-800"
           onClick={() => handler.reset()}
         >
           Reset Game

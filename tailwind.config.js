@@ -27,6 +27,9 @@ module.exports = {
         roll: "roll 9s linear forwards",
         "fade-in": "fadeIn 1s ease-in forwards",
       },
+      transformOrigin: {
+        center: "center",
+      },
     },
   },
   plugins: [],

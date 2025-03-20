@@ -12,7 +12,7 @@ const CARD_NUMBER_EASY = 8;
 const CARD_NUMBER_MEDIUM = 12;
 const CARD_NUMBER_HARD = 16;
 
-export const NUMBER_OF_CARDS = CARD_NUMBER_EASY;
+export const NUMBER_OF_CARDS = CARD_NUMBER_MEDIUM;
 
 function getRandomSubset(arr: string[], size: number): string[] {
   const shuffled = [...arr].sort(() => 0.5 - Math.random());
